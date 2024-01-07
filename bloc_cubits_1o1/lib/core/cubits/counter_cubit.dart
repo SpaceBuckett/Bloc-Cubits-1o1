@@ -12,7 +12,6 @@ class CounterCubit extends Cubit<int> {
   void decrement() => emit(state - 1);
 
   bool isMatchedInitialValue() {
-    print('INIT VALUE: $initialValue STATE VALUE: $state');
     if (initialValue == null || initialValue != state) {
       return false;
     }
